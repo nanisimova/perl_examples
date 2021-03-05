@@ -7,10 +7,10 @@
     <p><input type="submit" value="Search"></p>
 </form>
 
-[% IF rows >= 100%]<p>Внимание! Предоставлены только первые 100 результатов поиска.</p>[% END %]
+[% IF rows >= 100 %]<p>Внимание! Предоставлены только первые 100 результатов поиска.</p>[% END %]
 
 [% IF list %]
-
+<b>[% email %]</b>
 <table border="0">
 [% FOREACH line = list %]
 <tr>

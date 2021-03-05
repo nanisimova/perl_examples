@@ -30,6 +30,7 @@ sub index :Path :Args(0) {
         $c->stash->{rows} = $sth->rows;
         my $array = $sth->fetchall_arrayref();
         $c->stash->{list} = $array;
+        $c->stash->{email} = $email;
     }
 
     $c->stash->{template} = 'index.tt';
